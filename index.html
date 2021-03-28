@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    
     <link rel="stylesheet" href="./Assets/CSS/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -28,105 +29,106 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container pt-3">
-      <div class="hour row mb-4" id="9am" index="9">
-        <div class="col-2 border border-left-0 border-dark">
-          <p id="hourText">9 AM</p>
+    <div class="container pt-3 d-flex flex-column">
+      
+      <div class="hour row mb-4 h-100" id="9am" index="9">
+        <div class="col-2 border border-left-0 border-dark d-flex">
+          <p class="m-auto" id="hourText">9 AM</p>
         </div>
-        <div class="col-9 text-white">
+        <div class=" task col-9 text-white">
           <p id="taskText"></p>
         </div>
-        <div class="col-1 bg-info rounded-right ">
-          3 of 3
+        <div class="saveBtn col-1 d-flex">
+          <span class="fas fa-save m-auto"></span>
         </div>
       </div>
-      <div class="hour row mb-4" id="10am" index="10">
-        <div class="col-2 border border-left-0 border-dark">
-          <p id="hourText">10 AM</p>
+      <div class="hour row mb-4 h-100" id="10am" index="10">
+        <div class="col-2 border border-left-0 border-dark d-flex">
+          <p class="m-auto" id="hourText">10 AM</p>
         </div>
-        <div class="col-9 text-white">
+        <div class=" task col-9 text-white ">
           <p id="taskText"></p>
         </div>
-        <div class="col-1 bg-info rounded-right ">
-          3 of 3
+        <div class=" saveBtn col-1 d-flex">
+          <span class="fas fa-save m-auto"></span>
         </div> 
       </div>
-      <div class="hour row mb-4" id="11am" index="11">
-        <div class="col-2 border border-left-0 border-dark">
-          <p id="hourText">11 AM</p>
+      <div class="hour row mb-4 h-100" id="11am" index="11">
+        <div class="col-2 border border-left-0 border-dark d-flex">
+          <p class="m-auto" id="hourText">11 AM</p>
         </div>
-        <div class="col-9 text-white">
+        <div class="task col-9 text-white ">
           <p id="taskText"></p>
         </div>
-        <div class="col-1 bg-info rounded-right ">
-          3 of 3
-        </div>
+        <div class=" saveBtn col-1 d-flex">
+          <span class="fas fa-save m-auto"></span>
+        </div> 
       </div>
-      <div class="hour row mb-4" id="12pm" index="12">
-        <div class="col-2 border border-left-0 border-dark">
-          <p id="hourText">12 PM</p>
+      <div class="hour row mb-4 h-100" id="12pm" index="12">
+        <div class="col-2 border border-left-0 border-dark d-flex">
+          <p class="m-auto" id="hourText">12 PM</p>
         </div>
-        <div class="col-9 text-white">
+        <div class="task col-9 text-white ">
           <p id="taskText"></p>
         </div>
-        <div class="col-1 bg-info rounded-right ">
-          3 of 3
-        </div>
+        <div class=" saveBtn col-1 d-flex">
+          <span class="fas fa-save m-auto"></span>
+        </div> 
       </div>
-      <div class="hour row mb-4" id="1pm" index="13">
-        <div class="col-2 border border-left-0 border-dark">
-          <p id="hourText">1 PM</p>
+      <div class="hour row mb-4 h-100" id="1pm" index="13">
+        <div class="col-2 border border-left-0 border-dark d-flex">
+          <p class="m-auto" id="hourText">1 PM</p>
         </div>
-        <div class="col-9 text-white">
+        <div class="task col-9 text-white ">
           <p id="taskText"></p>
         </div>
-        <div class="col-1 bg-info rounded-right ">
-          3 of 3
-        </div>
+        <div class=" saveBtn col-1 d-flex">
+          <span class="fas fa-save m-auto"></span>
+        </div> 
       </div>
-      <div class="hour row mb-4" id="2pm" index="14">
-        <div class="col-2 border border-left-0 border-dark">
-          <p id="hourText">2 PM</p>
+      <div class="hour row mb-4 h-100" id="2pm" index="14">
+        <div class="col-2 border border-left-0 border-dark d-flex">
+          <p class="m-auto" id="hourText">2 PM</p>
         </div>
-        <div class="col-9 text-white">
+        <div class="task col-9 text-white ">
           <p id="taskText"></p>
         </div>
-        <div class="col-1 bg-info rounded-right ">
-          3 of 3
-        </div>
+        <div class=" saveBtn col-1 d-flex">
+          <span class="fas fa-save m-auto"></span>
+        </div> 
       </div>
-      <div class="hour row mb-4" id="3pm" index="15">
-        <div class="col-2 border border-left-0 border-dark">
-          <p id="hourText">3 PM</p>
+      <div class="hour row mb-4 h-100" id="3pm" index="15">
+        <div class="col-2 border border-left-0 border-dark d-flex">
+          <p class="m-auto" id="hourText">3 PM</p>
         </div>
-        <div class="col-9 text-white">
+        <div class="task col-9 text-white ">
           <p id="taskText"></p>
         </div>
-        <div class="col-1 bg-info rounded-right ">
-          3 of 3
-        </div>
+        <div class=" saveBtn col-1 d-flex">
+          <span class="fas fa-save m-auto"></span>
+        </div> 
       </div>
-      <div class="hour row mb-4" id="4pm" index="16">
-        <div class="col-2 border border-left-0 border-dark">
-          <p id="hourText">4 PM</p>
+      <div class="hour row mb-4 h-100" id="4pm" index="16">
+        <div class="col-2 border border-left-0 border-dark d-flex">
+          <p class="m-auto" id="hourText">4 PM</p>
         </div>
-        <div class="col-9 text-white">
+        <div class="task col-9 text-white ">
           <p id="taskText"></p>
         </div>
-        <div class="col-1 bg-info rounded-right ">
-          3 of 3
-        </div>
+        <div class=" saveBtn col-1 d-flex">
+          <span class="fas fa-save m-auto"></span>
+        </div> 
       </div>
-      <div class="hour row mb-4" id="5pm" indxe="17">
-        <div class="col-2 border border-left-0 border-dark">
-          <p id="hourText">5 PM</p>
+      <div class="hour row mb-4 h-100" id="5pm" index="17">
+        <div class="col-2 border border-left-0 border-dark d-flex">
+          <p class="m-auto" id="hourText">5 PM</p>
         </div>
-        <div class="col-9 text-white">
+        <div class="task col-9 text-white ">
           <p id="taskText"></p>
         </div>
-        <div class="col-1 bg-info rounded-right ">
-          3 of 3
-        </div>
+        <div class=" saveBtn col-1 d-flex">
+          <span class="fas fa-save m-auto"></span>
+        </div> 
       </div>
     </div>
 

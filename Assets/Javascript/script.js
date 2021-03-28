@@ -38,14 +38,6 @@ var auditTask = function(hourEl,i){
             $(taskDiv).addClass("future");
             console.log("future");
         }  ;
-        
-        
-    
-   
-    
-    //console.log(taskDiv);
-
-    
 };
 
 var loopTing = function(){
@@ -56,7 +48,36 @@ var loopTing = function(){
     
 }
 
+//replaces <p> of clicked div with a textarea
+$(".container").on("click",".task", function(){
+    var clickedElement = $(this)[0].children[0];
+    console.log(clickedElement);
+    var text = $(clickedElement).text().trim();
+    console.log(text);
+    
+    var textInput = $("<textarea>").addClass("form-control").val(text);
+    $(clickedElement).replaceWith(textInput);
+    textInput.trigger("focus");
+});
+
+//reconstructs <p> upon unfocusing of corresponding textarea
+$(".container").on("blur", "textarea", function(){
+    var text = $(this).val().trim();
+
+    var taskP = $("<p>").text(text);
+    $(this).replaceWith(taskP);
+})
 
 
-loopTing();
 displayCurrentDate();
+
+
+
+//check every 15 minutes if the status of each time-block is still correct
+setInterval (function(){
+    loopTing();
+}, 1000*60*15);
+//but because we don't want to wait 15 minutes after each time we load 
+//the webpage for the time-blocks to be coloured, we manually call the status loop once
+loopTing();
+

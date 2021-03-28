@@ -46,8 +46,12 @@ textarea{
   color: white;
 }
 
+.past p, .future p {
+  color: black;
+}
+
 .present {
-  background-color: #ff6961;
+  background-color: red;
   color: white;
 }
 
