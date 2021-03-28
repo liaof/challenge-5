@@ -16,7 +16,6 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 
-
 ### Bugs
 
 For reasons unknown the time-block for 9 AM will ALWAYS be color coded as a future event.
@@ -33,3 +32,12 @@ js:28 returns n=m<br />
 As you can see, even when the current time is larger than 9, js:26 still returns a value of false while js:27 returns a value of true
 
 I have no idea why this happens.
+
+### Other Screenshots
+
+Note the array of strings in the console, which is reflected on the webpage itself<br /><br />
+![Task repopulation](Screenshots/localStorage.jpg)
+
+#### Special Thanks
+![jQuery Documentaion](https://jquery.com/)
+![w3schools](https://www.w3schools.com/)
