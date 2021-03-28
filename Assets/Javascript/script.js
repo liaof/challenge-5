@@ -57,12 +57,12 @@ var auditTask = function(hourEl){
     var taskDiv = hourEl[0].children[1];
     //console.log(taskDiv);
     
-    console.log(currentHour);
-    console.log(taskHour);
+    //console.log(currentHour);
+    //console.log(taskHour);
     
-    console.log(currentHour>taskHour);
-    console.log(currentHour<taskHour);
-    console.log(currentHour==taskHour);
+    //console.log(currentHour>taskHour);
+    //console.log(currentHour<taskHour);
+    //console.log(currentHour==taskHour);
         
         if(currentHour>taskHour){//past
             $(taskDiv).addClass("past");
