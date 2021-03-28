@@ -64,17 +64,16 @@ var auditTask = function(hourEl){
     //console.log(currentHour<taskHour);
     //console.log(currentHour==taskHour);
         
-        if(currentHour>taskHour){//past
-            $(taskDiv).addClass("past");
-            console.log("past");
-        } else if(currentHour==taskHour){//present
-            $(taskDiv).addClass("present");
-            console.log("present");
-        } 
-        else if(currentHour<taskHour){//future
-            $(taskDiv).addClass("future");
-            console.log("future");
-        }  ;
+    if(currentHour>taskHour){//past
+        $(taskDiv).addClass("past");
+        //console.log("past");
+    } else if(currentHour==taskHour){//present
+        $(taskDiv).addClass("present");
+        //console.log("present");
+    } else if(currentHour<taskHour){//future
+        $(taskDiv).addClass("future");
+        //console.log("future");
+    };
 };
 
 var loopTing = function(){

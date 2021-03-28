@@ -31,7 +31,7 @@ js:28 returns n=m<br />
 ![Things that make me hate life](Screenshots/rageinducing.jpg)<br />
 As you can see, even when the current time is larger than 9, js:26 still returns a value of false while js:27 returns a value of true
 
-I have no idea why this happens.
+I have no idea why this happens. I have logging all throughout my auditTasks function, please take a look at wtf I'm doing wrong.
 
 ### Other Screenshots
 
