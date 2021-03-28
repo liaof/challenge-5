@@ -13,7 +13,7 @@ var displayCurrentDate = function(){
 displayCurrentDate();
 
 var auditTask = function(hourEl,i){
-    var currentHour = moment().add(2,'hours').format("HH");
+    var currentHour = moment().format("HH");
     //checks the time stamp of the passed block
     var taskHour = hourEl[0].attributes[2].value;
     //select the 2nd div in the hour row class, aka the task text area
@@ -50,23 +50,40 @@ var loopTing = function(){
 
 //replaces <p> of clicked div with a textarea
 $(".container").on("click",".task", function(){
+    //select the <p> of the clicked .task
     var clickedElement = $(this)[0].children[0];
-    console.log(clickedElement);
-    var text = $(clickedElement).text().trim();
-    console.log(text);
+    //check if the clicked element isn't already a textarea
+    //if we don't, everytime we click the textarea the extant text gets deleted
+    if ($(clickedElement).is("p")){
+        console.log(clickedElement);
+        var text = $(clickedElement).text().trim();
+        console.log(text);
     
-    var textInput = $("<textarea>").addClass("form-control").val(text);
-    $(clickedElement).replaceWith(textInput);
-    textInput.trigger("focus");
+        var textInput = $("<textarea>").addClass("form-control").val(text);
+        $(clickedElement).replaceWith(textInput);
+        textInput.trigger("focus");
+    };
 });
 
 //reconstructs <p> upon unfocusing of corresponding textarea
-$(".container").on("blur", "textarea", function(){
-    var text = $(this).val().trim();
+//$(".container").on("blur", "textarea", function(){
+ //   var text = $(this).val().trim();
+//
+ //   var taskP = $("<p>").text(text);
+ //   $(this).replaceWith(taskP);
+//});
 
+$(".container").on("click", ".saveBtn", function(){
+    var sibling = $(this).prev()[0].children;
+    
+
+    var text = $(sibling).val();
+    console.log(text);
+    //var text = closestText.text().trim();
+    //console.log(text);
     var taskP = $("<p>").text(text);
-    $(this).replaceWith(taskP);
-})
+    $(sibling).replaceWith(taskP);
+});
 
 
 displayCurrentDate();
