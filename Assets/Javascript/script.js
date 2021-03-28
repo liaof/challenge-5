@@ -13,7 +13,7 @@ var displayCurrentDate = function(){
 displayCurrentDate();
 
 var auditTask = function(hourEl,i){
-    var currentHour = moment().add(4,'hours').format("HH");
+    var currentHour = moment().add(2,'hours').format("HH");
     //checks the time stamp of the passed block
     var taskHour = hourEl[0].attributes[2].value;
     //select the 2nd div in the hour row class, aka the task text area
@@ -56,8 +56,7 @@ var loopTing = function(){
     
 }
 
-console.log(moment().format("HH"));
-console.log("Loop Start");
+
 
 loopTing();
 displayCurrentDate();
