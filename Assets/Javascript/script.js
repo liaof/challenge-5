@@ -82,7 +82,7 @@ var loopTing = function(){
         auditTask(workHoursEl[i]);
     }
     
-}
+};
 
 //replaces <p> of clicked div with a textarea
 $(".container").on("click",".task", function(){
